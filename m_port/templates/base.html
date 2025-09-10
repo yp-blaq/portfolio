@@ -17,6 +17,7 @@
     
     {% comment %} load static css file {% endcomment %}
     <link href="{% static 'css/stylus.css' %}" rel="stylesheet" />
+    <link src="{% static 'js/script.js' %}"/>
 </head>
 <body class="bg-dark">
 
@@ -53,4 +54,5 @@
     template -->
     {% block content %}{% endblock %}
 </body>
+
 </html>

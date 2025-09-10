@@ -1,0 +1,15 @@
+{
+    "builds": [{
+        "src": "myPortfolio/wsgi.py",
+        "use": "@vercel/python",
+        "config": {
+        "buildCommand": "pip install -r requirements.txt"
+      }
+    }],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "myPortfolio/wsgi.py"
+        }
+    ]
+}

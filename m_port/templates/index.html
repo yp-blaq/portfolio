@@ -1,0 +1,577 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="container-md m-5 p-5 content-space-2">
+  <div class="row justify-content-start align-items-lg-center">
+    <!-- home text - landing page -->
+    <div class="col-md-8 col-lg-6 mb-7 mb-lg-0">
+      <div class="pe-lg-3 mb-7">
+        <h1
+          class="display-5 text-white mb-3 mb-md-2"
+          style="font-family: 'Mooli', serif; font-weight: 100 !important"
+        >
+          Hi There, <br />
+          I'm
+          <span class="text-success" style="font-family: 'Oswald', serif"
+            >EJE EMMANUEL OHOTUOWO. </span
+          ><br />
+          <!-- <span class="text-slider-items">
+                        Web Developer, Python Developer, Machine Learning / AI Developer
+                    </span> -->
+          <strong class="text-slider text-warning"></strong>
+          <br />
+          <!-- https://fonts.google.com/specimen/Croissant+One -->
+        </h1>
+        <button type="button" class="btn btn-primary rounded-pill m-3">
+          Contact Me! <span class="bi bi-arrow-down"></span>
+        </button>
+      </div>
+      <!-- profile link buttons -->
+      <div class="row">
+        <div class="col-sm-6">
+          <a
+            href="https://linkedin.com/in/emmanuel-eje-85407212b"
+            role="button"
+            class="btn btn-outline-primary rounded-circle"
+          >
+            <span class="bi bi-linkedin"></span>
+          </a>
+          <a
+            href="https://github.com/yp-blaq?tab=repositories"
+            role="button"
+            class="btn btn-primary rounded-circle"
+          >
+            <span class="bi bi-github"></span>
+          </a>
+          <a
+            href="https://twitter.com/blvck_yp"
+            role="button"
+            class="btn btn-outline-primary rounded-circle"
+          >
+            <span class="bi bi-twitter"></span>
+          </a>
+          <a
+            href="https://instagram.com/__blvck.yp?igsh=MTFpOGZ3cmM0Y242ZQ%3D%3D&utm_source=qr"
+            role="button"
+            class="btn btn-primary rounded-circle"
+          >
+            <span class="bi bi-instagram"></span>
+          </a>
+          <a
+            href="mailto:eje244@gmail.com"
+            role="button"
+            class="btn btn-outline-primary rounded-circle"
+          >
+            <span class="bi bi-envelope-fill"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- side image -->
+    <div class="col-md-8 col-lg-6">
+      <div class="ps-lg-10 mt-5 ms-5">
+        <img
+          class="img-fluid img-thumbnail rounded-5"
+          src="{% static 'IMG_5502.jpg' %}"
+          alt="My Welcome Image"
+          style="height: 350px"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Projects -->
+<!-- Portfolio Grid-->
+<section class="page-section bg-light" id="portfolio">
+  <div class="container">
+    <div class="text-center">
+      <h2
+        class="section-heading text-uppercase"
+        style="font-family: Kanit; fonr-weight: bold"
+      >
+        Projects
+      </h2>
+      <h3 class="section-subheading text-muted" style="font-family: Gabriola">
+        Check out some of my personal and paid Projects
+      </h3>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <!-- Portfolio item 1-->
+        <div class="portfolio-item">
+          <a
+            class="portfolio-link"
+            data-bs-toggle="modal"
+            href="#portfolioModal1"
+          >
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="bi bi-plus bi-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'abc.jpg' %}" alt="..." />
+          </a>
+          <div class="portfolio-caption">
+            <div class="portfolio-caption-heading">
+              Solving University-curriculum based course timetabling using
+              Artificial Bee Colony
+            </div>
+            <div class="portfolio-caption-subheading text-muted">
+              This project aims at solving the novel competition on timetabling,
+              focusing on the curriculum-based timetabling.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <!-- Portfolio item 2-->
+        <div class="portfolio-item">
+          <a
+            class="portfolio-link"
+            data-bs-toggle="modal"
+            href="#portfolioModal2"
+          >
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="bi bi-plus bi-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static "voter.jpeg" %}" alt="..." />
+          </a>
+          <div class="portfolio-caption">
+            <div class="portfolio-caption-heading">
+              Online Voter Registration System
+            </div>
+            <div class="portfolio-caption-subheading text-muted">
+              This system was designed to see the possibility of solving delayed
+              voters registration and as well curbing the errors made during
+              voters registration with the main point of bringing voter
+              registration to the local man at his/her doorstep.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <!-- Portfolio item 3-->
+        <div class="portfolio-item">
+          <a
+            class="portfolio-link"
+            data-bs-toggle="modal"
+            href="#portfolioModal3"
+          >
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="bi bi-plus bi-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'churn.png' %}" alt="..." />
+          </a>
+          <div class="portfolio-caption">
+            <div class="portfolio-caption-heading">
+              Customer Churn data prediction in telecommunications using SVM
+            </div>
+            <div class="portfolio-caption-subheading text-muted">
+              This is a data modelling and prediction-based project focused on
+              customer churn data for telecommunications
+            </div>
+          </div>
+        </div>
+      </div>
+      {% comment %}
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <!-- Portfolio item 4-->
+        <div class="portfolio-item">
+          <a
+            class="portfolio-link"
+            data-bs-toggle="modal"
+            href="#portfolioModal4"
+          >
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
+          </a>
+          <div class="portfolio-caption">
+            <div class="portfolio-caption-heading">Lines</div>
+            <div class="portfolio-caption-subheading text-muted">Branding</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+        <!-- Portfolio item 5-->
+        <div class="portfolio-item">
+          <a
+            class="portfolio-link"
+            data-bs-toggle="modal"
+            href="#portfolioModal5"
+          >
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
+          </a>
+          <div class="portfolio-caption">
+            <div class="portfolio-caption-heading">Southwest</div>
+            <div class="portfolio-caption-subheading text-muted">
+              Website Design
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <!-- Portfolio item 6-->
+        <div class="portfolio-item">
+          <a
+            class="portfolio-link"
+            data-bs-toggle="modal"
+            href="#portfolioModal6"
+          >
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="..." />
+          </a>
+          <div class="portfolio-caption">
+            <div class="portfolio-caption-heading">Window</div>
+            <div class="portfolio-caption-subheading text-muted">
+              Photography
+            </div>
+          </div>
+        </div>
+        {% endcomment %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About-->
+<section class="page-section" id="about">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading text-uppercase">About</h2>
+      <h3 class="section-subheading text-muted" style="font-family: Gabriola; font-weight: bold;">
+        My POV:
+      </h3>
+    </div>
+    <ul class="timeline">
+      <li>
+        <div class="timeline-image">
+          <img
+            class="rounded-circle img-fluid"
+            src="{% static 'IMG_5502.jpg' %}"
+            alt="..."
+            style="height:100%; width: 100%;"
+          />
+        </div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 style="color: white;">Origin</h4>
+            <h4 class="subheading" style="color: white;">Brief about me!</h4>
+          </div>
+          <div class="timeline-body">
+            <p class="text-muted">
+              Born into a family of Six (6) registered as the third born,
+              I've always had a ravaging interest in tech and aything electronics.
+              And with this interest at heart i grew daily to love more and more into tech space.
+              Hereby pursuing my dreams...
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="timeline-inverted">
+        <div class="timeline-image">
+          <img
+            class="rounded-circle img-fluid"
+            src="{% static 'tech.jpg' %}"
+            alt="..."
+            style="height:100%; width: 100%;"
+          />
+        </div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 style="color: white;">SEPT 2017</h4>
+            <h4 class="subheading" style="color: white;">START OF MY MAJOR TECH CAREER</h4>
+          </div>
+          <div class="timeline-body">
+            <p class="text-muted">
+              Gained admission to study Computer Science at Federal University Wukari, Taraba State.
+              A stepping stone to actualize my main dream of been in the tech space. 
+              Here at this point i discovered what it really meant been a developer and a tech enthusiast.
+              The journey started by shaping my actual path in the tech space which became AI/ML...
+            </p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="timeline-image">
+          <img
+            class="rounded-circle img-fluid"
+            src="{% static 'voter.jpeg' %}"
+            alt="..."
+            style="height:100%; width: 100%;"
+          />
+        </div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 style="color: white;">2020 - 2021</h4>
+            <h4 class="subheading" style="color: white;">Developed a functional Voters Registration System</h4>
+          </div>
+          <div class="timeline-body">
+            <p class="text-muted">
+              A milestone achieved, during this period i started learning Django Python
+              and so far i did good whilst presenting this project as a proof of my studies.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="timeline-inverted">
+        <div class="timeline-image">
+          <img
+            class="rounded-circle img-fluid"
+            src="{% static 'abc.jpg' %}"
+            alt="..."
+            style="height:100%; width: 100%;"
+          />
+        </div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 style="color:white;">March 2022</h4>
+            <h4 class="subheading" style="color:white;">Final Year Expendition</h4>
+          </div>
+          <div class="timeline-body">
+            <p class="text-muted">
+              At this point, the life got interesting. Love for tech grew more and more
+              For my final year project, I was tasked with developing a model for a Novel timetabling competition. 
+              Which i did and so far was awesome.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="timeline-inverted">
+        <div class="timeline-image">
+          <h4>
+            Be Part
+            <br />
+            Of Our
+            <br />
+            Next Story!
+          </h4>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- Portfolio Modals-->
+<!-- Portfolio item 1 modal popup-->
+<div
+  class="portfolio-modal modal fade"
+  id="portfolioModal1"
+  tabindex="-1"
+  role="dialog"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-bs-dismiss="modal">
+        <img src="{% static 'x.svg' %}" alt="Close modal" />
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="modal-body">
+              <!-- Project details-->
+              <h2 class="text-uppercase">
+                Solving University-curriculum based course timetabling using
+                Artificial Bee Colony Algorithm
+              </h2>
+              <p class="item-intro text-muted"></p>
+              <img
+                class="img-fluid d-block mx-auto"
+                src="{% static 'abc.jpg' %}"
+                alt="..."
+              />
+              <p>
+                This project was carried out as a final year project, and the
+                aim was to help automate the timetabling process of of a
+                University (using Federal University Wukari as a case study).
+                The timetabling problem focuses on the curriculum based aspect
+                rather than the class based. This implies that all lectures in
+                th timetable were assign based on the curriculum for each
+                department.
+              </p>
+              <ul class="list-inline">
+                <li>
+                  {% comment %} <strong>Link:</strong> {% endcomment %}
+                  <a
+                    href="https://github.com/yp-blaq/Solving-the-University-based-course-timetabling-using-Artificial-Bee-Colony"
+                    role="button"
+                    class="btn btn-primary"
+                  >
+                    <span class="bi bi-github"></span>
+                  </a>
+                </li>
+              </ul>
+              <button
+                class="btn btn-primary btn-xl text-uppercase"
+                data-bs-dismiss="modal"
+                type="button"
+              >
+                <i class="bi bi-x-lg me-1"></i>
+                Close Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio item 2 modal popup-->
+<div
+  class="portfolio-modal modal fade"
+  id="portfolioModal2"
+  tabindex="-1"
+  role="dialog"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-bs-dismiss="modal">
+        <img src="{% static 'x.svg' %}" alt="Close modal" />
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="modal-body">
+              <!-- Project details-->
+              <h2 class="text-uppercase">Online Voter Registration System</h2>
+              <p class="item-intro text-muted"></p>
+              <img class="img-fluid d-block mx-auto" src="{% static "voter.jpeg"
+              %}" alt="..." />
+              <p>
+                This system was designed to see the possibility of solving
+                delayed voters registration and as well curbing the errors made
+                during voters registration with the main point of bringing voter
+                registration to the local man at his/her doorstep. The primary
+                aim was to make the system user-friendly so as to allow the
+                common man who has knowledge of operating a mobile device to be
+                able to carryout the process on his/her own without any
+                assistance.
+              </p>
+              <ul class="list-inline">
+                <li>
+                  {% comment %} <strong>Link:</strong> {% endcomment %}
+                  <a
+                    href="https://github.com/yp-blaq/Voter-Registration-System"
+                    role="button"
+                    class="btn btn-primary"
+                  >
+                    <span class="bi bi-github"></span>
+                  </a>
+                </li>
+              </ul>
+              <button
+                class="btn btn-primary btn-xl text-uppercase"
+                data-bs-dismiss="modal"
+                type="button"
+              >
+                <i class="bi bi-x-lg me-1"></i>
+                Close Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio item 3 modal popup-->
+<div
+  class="portfolio-modal modal fade"
+  id="portfolioModal3"
+  tabindex="-1"
+  role="dialog"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-bs-dismiss="modal">
+        <img src="{% static 'x.svg' %}" alt="Close modal" />
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="modal-body">
+              <!-- Project details-->
+              <h2 class="text-uppercase">
+                Customer Churn data prediction in telecommunications using SVM
+              </h2>
+              <p class="item-intro text-muted"></p>
+              <img class="img-fluid d-block mx-auto" src="{% static "churn.png"
+              %}" alt="..." />
+              <p>
+                This analysis was carried out to develop a model that helps in
+                adequately analyzing customers data and providing a well
+                detailed analysis and improvement options in the
+                telecommunications industry. Support Vector Machine (SVM) was
+                considered a best-fit for the project and as such was
+                incoporated which provided a fruitful result during the
+                accuracy-test.
+              </p>
+              <ul class="list-inline">
+                <li>
+                  {% comment %} <strong>Link:</strong> {% endcomment %}
+                  <a
+                    href="https://github.com/yp-blaq/Customer-Churn-data-prediction-in-telecommunications-using-SVM-Support-Vector-Machine-"
+                    role="button"
+                    class="btn btn-primary"
+                  >
+                    <span class="bi bi-github"></span>
+                  </a>
+                </li>
+              </ul>
+              <button
+                class="btn btn-primary btn-xl text-uppercase"
+                data-bs-dismiss="modal"
+                type="button"
+              >
+                <i class="bi bi-x-lg me-1"></i>
+                Close Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+  </svg> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.js"></script>
+<!-- CDN link for Javascript typed text animation -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- js code for the typed text animation to work -->
+<script src="js/script.js"></script>
+<script>
+  if ($(".text-slider").length == 1) {
+    var typed_strings =
+      "Web Developer., Python Developer., Machine Learning / AI Developer., Data Scientist., Mobile Phone Engineer.";
+
+    var typed = new Typed(".text-slider", {
+      strings: typed_strings.split(", "),
+      typeSpeed: 50,
+      loop: true,
+      backDelay: 900,
+      backSpeed: 30,
+    });
+  }
+</script>
+{% endblock %}

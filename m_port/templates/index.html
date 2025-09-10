@@ -559,7 +559,7 @@
 <!-- CDN link for Javascript typed text animation -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- js code for the typed text animation to work -->
-<script src="js/script.js"></script>
+<script src="{% static 'js/script.js' %}"></script>
 <script>
   if ($(".text-slider").length == 1) {
     var typed_strings =
@@ -575,4 +575,5 @@
   }
 </script>
 {% endblock %}
+
 
